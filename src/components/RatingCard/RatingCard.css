@@ -1,0 +1,46 @@
+.rating-card {
+    position: relative;
+    height: 337px;
+    border: 1px solid var(--border);
+    background-color: #3C3C3C;
+    border-radius: 16px;
+    width: 223px;
+    cursor: pointer;
+}
+
+.rating-card__number {
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    padding: 8px 24px;
+    min-height: 32px;
+    min-width: 14px;
+    background-color: var(--white);
+    color: var(--purple);
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 50px;
+}
+
+.rating-card__film {
+    width: 100%;
+    height: 100%;
+    border: solid 1px var(--border);
+    box-shadow: 0 0 80px var(--shadow);
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.rating-card__placeholder {
+    color: var(--purple);
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 130px;
+}
+
+@media (max-width: 767px) {
+    .rating-card {
+        display: inline-block;
+    }
+}

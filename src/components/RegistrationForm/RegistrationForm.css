@@ -1,0 +1,12 @@
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.registration-form button {
+    margin-top: 12px;
+    width: 100%;
+}

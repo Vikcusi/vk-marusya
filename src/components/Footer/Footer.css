@@ -1,0 +1,23 @@
+.footer {
+    width: 100%;
+    padding: 40px 0;
+    margin-top: auto;
+    justify-items: flex-end;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        justify-items: flex-start;
+    }
+
+    .footer__icon {
+        width: 24px;
+        height: 24px;
+    }
+}

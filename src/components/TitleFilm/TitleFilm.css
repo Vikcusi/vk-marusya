@@ -1,0 +1,165 @@
+.title-film {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 32px 0 0 0;
+    gap: 3px;
+}
+
+.title-film button {
+    height: 56px;
+}
+
+.title-film__info {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.title-film__definition {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title-film__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+.title-film__text {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--description);
+}
+
+.title-film__title {
+    margin: 0;
+    padding: 0;
+}
+
+.title-film__description {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFFB2;
+}
+
+.title-film__btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.title-film__img {
+    width: 100%;
+    height: 552px;
+    background-color: var(--gray-light);
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.title-film__btn-wrapper [data-size="medium"] {
+    min-width: 170px;
+}
+
+@media (max-width: 1390px) {
+    .title-film__btn-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 338px;
+        grid-auto-flow: dense;
+    }
+
+    .title-film__btn-wrapper [data-kind="primary"] {
+        grid-column: 1/4;
+    }
+}
+
+@media (max-width: 950px) {
+    .title-film {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 10px;
+        gap: 0;
+    }
+
+    .title-film__info {
+        gap: 32px;
+        padding: 24px 0;
+    }
+
+    .title-film__btn-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .title-film__btn-wrapper [data-kind="primary"] {
+        grid-column: 1/2;
+    }
+}
+
+@media (max-width: 767px) {
+    .title-film {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: -10px;
+        gap: 0;
+    }
+
+    .title-film__info {
+        gap: 32px;
+        padding: 24px 0;
+    }
+
+    .title-film__definition {
+        gap: 12px;
+    }
+
+    .title-film__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .title-film__title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .title-film__description {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .title-film__img {
+        width: 100%;
+        height: 234px;
+    }
+}
+
+@media (max-width: 648px) {
+    .title-film__btn-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .title-film__btn-wrapper [data-kind="primary"] {
+        grid-column: 1/4;
+    }
+
+    .movie-page {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .movie-page [data-kind="primary"] {
+        grid-column: 1/3;
+        width: 236px;
+    }
+
+}
