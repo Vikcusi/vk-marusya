@@ -1,6 +1,6 @@
 ## Запуск
 
-[Link Text](http://localhost:5174/)
+[VK Marusya](http://localhost:5174/)
 
 1. Установить зависимости:
 
