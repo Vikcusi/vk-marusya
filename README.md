@@ -1,6 +1,6 @@
 ## Запуск
 
-[VK Marusya](http://localhost:5174/)
+[VK Marusya](vk-marusya-lyart.vercel.app)
 
 1. Установить зависимости:
 
