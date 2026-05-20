@@ -1,6 +1,6 @@
 ## Запуск
 
-[VK Marusya](vk-marusya-lyart.vercel.app)
+[vk-marusya-lyart.vercel.app](https://vk-marusya-81740hs27-victoria-s-projects13.vercel.app)
 
 1. Установить зависимости:
 
